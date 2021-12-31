@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.line-chart {
+  width: 26rem;
+  height: 100%;
+  min-width: 22rem;
+}

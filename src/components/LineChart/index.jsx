@@ -9,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+
 import { Line } from 'react-chartjs-2';
 
 ChartJS.register(
@@ -21,10 +22,22 @@ ChartJS.register(
   Legend
 );
 
+const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    title: {
+      display: true,
+      text: 'Minhas Ações',
+    },
+  },
+};
 
-function LineChart({options, data}) {
+function LineChart({ data }) {
     return (
-        <Line 
+        <Line
           options={ options }
           data={ data }
         />
