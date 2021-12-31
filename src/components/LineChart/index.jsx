@@ -33,6 +33,23 @@ const options = {
       text: 'Minhas Ações',
     },
   },
+  scales: {
+    xAxes: [ {
+        display: true,
+        type: 'time',
+        time: {
+          parser: 'YYYY-MM-DD HH:mm:ss',
+          // tooltipFormat: 'll HH:mm',
+          unit: 'minute', // hour, day, week, month
+          unitStepSize: 30,
+          // displayFormats: {
+          //   day: 'DD MM',
+          //   minute: 'HH:mm',
+          // }
+        }
+      }
+    ]
+  }
 };
 
 function LineChart({ data }) {
